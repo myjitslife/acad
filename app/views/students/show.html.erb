@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= image_tag @student.image.url, class: "ind-profile-img" %></p>
+
+<div class="sidebar col-md-3">
+	<ul id="student_info">
+		<li>
+			<label><strong>Name</strong></label>
+			<%= @student.name %>
+		</li>
+
+		<li>
+			<label><strong>Phone</strong></label>
+			<%= @student.phone %>
+		</li>
+
+		<li>
+			<label><strong>Email</strong></label>
+			<%= @student.email %>
+		</li>
+	</ul>	
+
+	<div class="mt25 mb25">
+		<%= link_to 'Edit', edit_student_path(@student), class: "btn btn-link" %> |
+		<%= link_to 'Back', students_path, class: "btn btn-link" %>	
+	</div>
+</div>
+
+<div class="col-md-9 main">
+	
+</div>
